@@ -1,38 +1,80 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&family=Lobster&family=PT+Serif:ital@1&display=swap');
+*{
+  margin: 0;
+  padding: o;
+}
+.head{
   text-align: center;
+  color: rgb(204, 108, 18);
+  font-family: 'Belanosima', sans-serif;
+  margin-bottom: 20px;
+  font-size: 3rem;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
+  background-image: url(bg-2-full.jpg);
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-height: 100vh;
+}
+.app{
+  width: 95%;
+  min-height: 200px;
+  height: min-content;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: space-evenly;
+  background-image: url(Elegant_Background-17.jpg);
+}
+.score-section{
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-family: 'Lobster', cursive;
+  font-weight: bold;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.question-section{
+  position: relative;
+  width: 100%;
+  font-family: 'Belanosima', sans-serif;
+  margin-right: 25px;
+  color: white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.question-count{
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.question-count span{
+  font-size: 20px;
+  font-size: 30px;
+}
+.question-text{
+  margin-bottom: 12px;
+  color: white;
+  font-size: 25px;
+}
+.answer-section{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+button{
+  width: 100%;
+  font-size: 16px;
+  color: white;
+  background: linear-gradient(180deg,#1118b1 0%, #f563f9 40%, #923e94 70%, #c8306a 100%);
+  border-radius: 15px;
+  padding: 5px;
+  justify-content: flex-start;
+  align-items: center;
+  border: 3px solid gray;
+  cursor: pointer;
+  font-family: 'PT Serif', serif;
+  font-size: 20px;
+  font-weight: bold;
 }
